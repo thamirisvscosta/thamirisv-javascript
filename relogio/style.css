@@ -1,8 +1,18 @@
 @charset "UTF-8";
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
-    background-color: cornflowerblue;
     font: normal 15pt Arial;
+    width: 100%;
+    background-color:rgba(0,0,0,1);
+
+    margin:auto;
 }
 
 header{
@@ -11,19 +21,46 @@ header{
 }
 
 section{
-    background:white;
+    backdrop-filter: blur(2px);
+    background-color:rgba(0,0,0,0.3);
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 600px;
+    height: 400px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-div{
+#pesquisa{
+    
+    width: 400px;
+    border-radius: 30px;
+    background-color:rgba(0,0,0,0.3);
+    padding: 4px;
+    color:white;
+    font-size: 15px;
+    font-weight: 400;
     text-align: center;
-    padding:10px;
 }
 
+#pq p{
+    font-weight: 200;
+    color: azure;
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+div{
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding:10px;
+    margin-top: 10px;  
+    margin-bottom: 10px;
+
+}
 footer{
     color:white;
     text-align: center;
