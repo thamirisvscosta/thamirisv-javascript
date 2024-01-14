@@ -11,37 +11,21 @@
     <a-scene mindar-image="imageTargetSrc:../targets/targets.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
 
         <a-assets>
-            <a-asset-item id="nike" src="./models/nike-airjordan/scene.gltf"></a-asset-item>
-        </a-assets>
-        <a-assets>
             <a-asset-item id="starbucks" src="./models/starbucks/scene.gltf"></a-asset-item>
         </a-assets>
-
-        <a-assets>
-            <a-asset-item id="rolex" src="./models/rolex/scene.gltf"></a-asset-item>
-        </a-assets>
-
         <a-assets>
             <a-asset-item id="mario" src="./models/mario-bros/scene.gltf"></a-asset-item>
         </a-assets>
 
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-
-      <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#nike" animation-mixer>
-      </a-entity>
-      
-      <a-entity mindar-image-target="targetIndex: 1">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#rolex" animation-mixer>
-      </a-entity>
       
       <a-entity mindar-image-target="targetIndex: 2">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#mario" animation-mixer>
+        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.1 0.1 0.1" src="#starbucks" animation-mixer>
       </a-entity>
 
       <a-entity mindar-image-target="targetIndex: 3">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#starbucks" animation-mixer>
+        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.1 0.1 0.1" src="#mario" animation-mixer>
       </a-entity>
     </a-scene>
   </body>
