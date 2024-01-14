@@ -1,0 +1,16 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.autor{
+    font-family: sans-serif;
+    font-size: small;
+    padding: .8px;
+    text-align: justify;
+    background-color: black;
+    color: aqua;
+
+}
