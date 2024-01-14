@@ -1,0 +1,52 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+    <title>Marcas AR</title>
+  </head>
+  <body>
+    <a-scene mindar-image="imageTargetSrc:./targets/target.mind; maxTrack: 2" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+
+        <a-assets>
+            <img id="card" src="./imgs/nike-logo.jpg" />
+            <a-asset-item id="nike" src="./models/nike-airjordan/scene.gltf"></a-asset-item>
+        </a-assets>
+        <a-assets>
+            <img id="card" src="./imgs/starbucks-logo.jpeg" />
+            <a-asset-item id="starbucks" src="./models/starbucks/scene.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <img id="card" src="./imgs/rolex-logo.png" />
+            <a-asset-item id="rolex" src="./models/rolex/scene.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <img id="card" src="./imgs/mariobros-logo.jpg" />
+            <a-asset-item id="mario" src="./models/mario-bros/scene.gltf"></a-asset-item>
+        </a-assets>
+
+
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#nike" animation-mixer>
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 1">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#rolex" animation-mixer>
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#mario" animation-mixer>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 3">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#starbucks" animation-mixer>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
